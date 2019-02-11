@@ -1,7 +1,4 @@
 .c-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   width: 250px;
 
   .header {
@@ -10,20 +7,18 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: .5em;
-
-    .title {
-
-    }
-
-    .item-counter {
-
-    }
   }
 
-  .c-list-item {
+  .list-item-wrapper {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
-    &:not(:last-child) {
-      margin-bottom: .5em;
+    .c-list-item {
+
+      &:not(:last-child) {
+        margin-bottom: .5em;
+      }
     }
   }
 }

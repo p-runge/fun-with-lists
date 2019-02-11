@@ -1,27 +1,34 @@
-/*
- * ATTENTION!
- * Only fill ListItem components in the default slot of this component
- */
+import draggable from 'vuedraggable'
+
+import ListItem from '../list-item';
 
 export default {
   name: 'List',
-  components: {},
+  components: {
+    draggable,
+    ListItem
+  },
   props: {
     title: String
   },
   data() {
     return {
-      itemCounter: 0
+      items: [
+        {
+          title: 'Test 1'
+        },
+        {
+          title: 'Test 2'
+        },
+        {
+          title: 'Test 3'
+        },
+      ]
     };
   },
-  mounted() {
-    this.updateItemCounter();
-  },
-  methods: {
-    updateItemCounter() {
-      this.$slots.default.forEach(() => {
-        this.itemCounter++;
-      })
+  computed: {
+    itemCounter() {
+      return this.items.length;
     }
   }
 }
