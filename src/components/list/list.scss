@@ -1,3 +1,29 @@
 .c-list {
-  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 250px;
+
+  .header {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5em;
+
+    .title {
+
+    }
+
+    .item-counter {
+
+    }
+  }
+
+  .c-list-item {
+
+    &:not(:last-child) {
+      margin-bottom: .5em;
+    }
+  }
 }

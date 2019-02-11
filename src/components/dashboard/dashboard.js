@@ -1,11 +1,13 @@
 import List from '../list'
+import ListItem from '../list-item'
 
 export default {
   name: 'Dashboard',
   components: {
-    List
+    List,
+    ListItem
   },
-  data: () => {
+  data() {
     return {
       title: 'Spaß mit Listen'
     };

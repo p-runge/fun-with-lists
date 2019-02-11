@@ -13,19 +13,26 @@
 
   .all-elements-wrapper {
     display: flex;
-    justify-content: space-between;
 
     .unassinged-elements,
     .assinged-elements {
       padding: 1em;
+      display: flex;
     }
 
     .unassinged-elements {
       padding-left: 0;
+      border-right: 1px dashed black;
     }
     .assinged-elements {
       padding-right: 0;
-      border-left: 1px dashed black;
+
+      .c-list {
+
+        &:not(:last-child) {
+          margin-right: 1em;
+        }
+      }
     }
   }
 }

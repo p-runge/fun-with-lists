@@ -1,19 +1,27 @@
+/*
+ * ATTENTION!
+ * Only fill ListItem components in the default slot of this component
+ */
+
 export default {
-  name: 'list',
+  name: 'List',
   components: {},
-  props: [],
-  data () {
+  props: {
+    title: String
+  },
+  data() {
     return {
-
-    }
+      itemCounter: 0
+    };
   },
-  computed: {
-
-  },
-  mounted () {
-
+  mounted() {
+    this.updateItemCounter();
   },
   methods: {
-
+    updateItemCounter() {
+      this.$slots.default.forEach(() => {
+        this.itemCounter++;
+      })
+    }
   }
 }

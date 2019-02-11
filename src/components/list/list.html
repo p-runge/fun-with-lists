@@ -1,5 +1,7 @@
-
-<section class="list">
-  <h1>list Component</h1>
-</section>
-
+<ul class="c-list">
+  <div v-if="title" class="header">
+    <span class="title">{{title}}</span>
+    <span class="item-counter">{{itemCounter}}</span>
+  </div>
+  <slot></slot>
+</ul>
