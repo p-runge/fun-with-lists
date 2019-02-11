@@ -1,0 +1,31 @@
+.c-dashboard {
+  padding: 1em;
+  max-width: 1200px;
+
+  .list-creation-wrapper {
+    border: 1px dashed black;
+    padding: 1em;
+
+    .list-creation {
+    margin-right: 3em;
+    }
+  }
+
+  .all-elements-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .unassinged-elements,
+    .assinged-elements {
+      padding: 1em;
+    }
+
+    .unassinged-elements {
+      padding-left: 0;
+    }
+    .assinged-elements {
+      padding-right: 0;
+      border-left: 1px dashed black;
+    }
+  }
+}
