@@ -5,7 +5,12 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Run local dev server
 ```
 npm run serve
+```
+
+### Open app
+```
+localhost:8080
 ```
