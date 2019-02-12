@@ -14,3 +14,8 @@ npm run serve
 ```
 localhost:8080
 ```
+
+### Run tests
+```
+npm run test
+```
