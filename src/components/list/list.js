@@ -9,22 +9,13 @@ export default {
     ListItem
   },
   props: {
-    title: String
-  },
-  data() {
-    return {
-      items: [
-        {
-          title: 'Test 1'
-        },
-        {
-          title: 'Test 2'
-        },
-        {
-          title: 'Test 3'
-        },
-      ]
-    };
+    title: String,
+    items: {
+      type: Array,
+      default() {
+        return [];
+      }
+    }
   },
   computed: {
     itemCounter() {

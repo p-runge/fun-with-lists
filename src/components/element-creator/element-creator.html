@@ -1,0 +1,6 @@
+<div class="c-element-creator">
+  <span class="title">{{title}}</span>
+  <input class="elementName" v-model="elementTitle" :placeholder="placeholder" />
+  <button class="createButton" v-on:click="clickHandlerWithValidator(elementTitle)">{{buttonLabel}}</button>
+  <span v-if="validator && validator() === false" class="error-message">{{errorMessage}}</span>
+</div>
