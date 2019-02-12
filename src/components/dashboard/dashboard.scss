@@ -1,0 +1,41 @@
+.c-dashboard {
+  padding: 1em;
+  max-width: 1200px;
+
+  .list-creation-wrapper {
+    border: 1px dashed black;
+    padding: 1em;
+
+    .c-element-creator {
+
+      &:not(:last-child) {
+        margin-right: 3em;
+      }
+    }
+  }
+
+  .all-elements-wrapper {
+    display: flex;
+
+    .unassinged-elements,
+    .assinged-elements {
+      padding: 1em;
+      display: flex;
+    }
+
+    .unassinged-elements {
+      padding-left: 0;
+      border-right: 1px dashed black;
+    }
+    .assinged-elements {
+      padding-right: 0;
+
+      .c-list {
+
+        &:not(:last-child) {
+          margin-right: 1em;
+        }
+      }
+    }
+  }
+}

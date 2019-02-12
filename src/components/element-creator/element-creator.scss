@@ -1,0 +1,22 @@
+.c-element-creator {
+  display: inline-block;
+
+  .title {
+    display: block;
+    font-weight: bold;
+  }
+
+  .createButton {
+    font-size: 1em;
+    padding: .2em 1em;
+    background-color: #0da712;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: .5em;
+  }
+
+  .error-message {
+    color: red;
+    margin-left: .5em;
+  }
+}

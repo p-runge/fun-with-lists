@@ -5,25 +5,12 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Run local dev server
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Open app
 ```
-npm run build
+localhost:8080
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
