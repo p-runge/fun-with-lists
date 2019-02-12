@@ -31,7 +31,8 @@ export default {
         (this.validator && this.validator()) ||
         !this.validator
       ) {
-        this.clickHandler(elementTitle)
+        this.clickHandler(elementTitle);
+        this.elementTitle = null;
       }
     }
   }
