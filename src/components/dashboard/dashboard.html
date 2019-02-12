@@ -1,17 +1,24 @@
 <div class="c-dashboard">
   <h1>{{title}}</h1>
   <div class="list-creation-wrapper">
-    <div class="list-creation"></div>
-    <div class="list-creation"></div>
+    <ElementCreator
+      v-for="elementCreator in elementCreators"
+      :key="elementCreator.id"
+      v-bind="elementCreator"
+    />
   </div>
   <div class="all-elements-wrapper">
     <div class="unassinged-elements">
-      <List />
+      <List
+        :items="unassingedItems"
+      />
     </div>
     <div class="assinged-elements">
-      <List title="List 1" />
-      <List title="List 2" />
-      <List title="List 3" />
+      <List
+        v-for="list in lists"
+        :key="list.id"
+        :title="list.title"
+      />
     </div>
   </div>
 </div>

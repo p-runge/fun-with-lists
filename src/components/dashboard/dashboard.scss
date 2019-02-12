@@ -6,8 +6,11 @@
     border: 1px dashed black;
     padding: 1em;
 
-    .list-creation {
-      margin-right: 3em;
+    .c-element-creator {
+
+      &:not(:last-child) {
+        margin-right: 3em;
+      }
     }
   }
 
