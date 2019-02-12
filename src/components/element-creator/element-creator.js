@@ -15,12 +15,24 @@ export default {
        */
       type: Function,
       required: true
-    }
+    },
+    errorMessage: String,
+    validator: Function,
   },
   data() {
     return {
       buttonLabel: 'Hinzufügen',
       elementTitle: ''
+    }
+  },
+  methods: {
+    clickHandlerWithValidator(elementTitle) {
+      if(
+        (this.validator && this.validator()) ||
+        !this.validator
+      ) {
+        this.clickHandler(elementTitle)
+      }
     }
   }
 }

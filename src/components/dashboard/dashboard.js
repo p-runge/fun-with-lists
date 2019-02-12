@@ -30,6 +30,10 @@ export default {
               title: elementTitle,
               items: []
             })
+          },
+          errorMessage: 'Es können maximal 3 Listen erstellt werden',
+          validator: () => {
+            return this.lists.length < this.maxListAmount;
           }
         }
       ],
@@ -43,11 +47,7 @@ export default {
       this.unassingedItems.push(listItem);
     },
     createList(list) {
-      if (this.lists.length < this.maxListAmount) {
-        this.lists.push(list);
-      } else {
-        // TODO: show error message
-      }
+      this.lists.push(list);
     }
   }
 }
