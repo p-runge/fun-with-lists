@@ -3,7 +3,12 @@
     <span class="title">{{title}}</span>
     <span class="item-counter">{{itemCounter}}</span>
   </div>
-  <draggable class="list-item-wrapper" v-model="items" :options="{group:'people'}" @start="drag=true" @end="drag=false">
+  <draggable
+    class="list-item-wrapper"
+    element="ul"
+    :list="items"
+    :options="{group:'people'}"
+  >
     <ListItem
       v-for="item in items"
       :key="item.id"
