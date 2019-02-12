@@ -13,6 +13,10 @@
     border: 2px solid black;
     border-radius: 5px;
     margin-left: .5em;
+
+    &:disabled {
+      background-color: gray;
+    }
   }
 
   .error-message {
